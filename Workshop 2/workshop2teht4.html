@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Confirmation</title>
+</head>
+<body>
+
+    <button id="oknappi">OK</button>
+    <button id="cancel-nappi">Cancel</button>
+
+    <p id="tulos"></p>
+
+    <script>
+        const okN = document.getElementById('oknappi');
+        const cancelnappi = document.getElementById('cancel-nappi');
+        const tulos = document.getElementById('tulos');
+
+        okN.addEventListener('click', function() {
+            tulos.textContent = "Welcome student";
+        });
+
+        cancelnappi.addEventListener('click', function() {
+            tulos.textContent = "Sorry, this page is for students only";
+        });
+    </script>
+
+</body>
+</html>
