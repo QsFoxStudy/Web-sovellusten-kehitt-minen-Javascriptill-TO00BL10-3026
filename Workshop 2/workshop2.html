@@ -19,16 +19,25 @@
   </style>
   <!-- SCRIPT TÄGIN VOIT KIRJOITTAA TÄHÄN -->
   <script>
-       document.write(
-         '<b><em>"Jos minulla olisi yhdeksän tuntia puun kaatamiseen, käyttäisin ensimmäiset kuusi kirveen terottamiseen."</b></em><p> -Abraham Lincoln<p>'
-       );
-       (function repeatingtext() {
-         for (var i = 0; i < 50; i++) {
-           document.write("sama rivi tekstiä, ");
-         }
-       })();
-	//Haluttaesssa kutsutaan funktiota 
-	//repeatingtext()
+    document.write(
+      '<b><em>"Jos minulla olisi yhdeksän tuntia puun kaatamiseen, käyttäisin ensimmäiset kuusi kirveen terottamiseen."</b></em><p> -Abraham Lincoln<p>'
+    );
+    (function repeatingtext() {
+      for (var i = 0; i < 50; i++) {
+        document.write("sama rivi tekstiä, ");
+      }
+    })();
+
+    if (navigator.userAgent.toLowerCase().includes("mozilla")) {
+      {
+        alert("You are using Firefox, redirecting you...");
+      }
+      window.location.href = "http://www.mozilla.org";
+    } else {
+      window.location.href = "http://www.google.com";
+    }
+    //Haluttaesssa kutsutaan funktiota
+    //repeatingtext()
   </script>
   <body>
     <h1>Työpaja 2: JavaScript BOM & DOM</h1>
