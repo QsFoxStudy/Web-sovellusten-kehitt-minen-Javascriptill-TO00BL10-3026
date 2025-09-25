@@ -190,6 +190,7 @@
 
     <p>
       Bonus: Miten voisi käsitellä tilanteen, jossa sijainti ei ole saatavilla?
+    </p>
       <script>
         const btnYksi = document.getElementById("Nappi");
         btnYksi.onclick = function () {
@@ -290,7 +291,7 @@
         function naytakoordinaatti(event) {
           const x = event.offsetX;
           const y = event.offsetY;
-          
+
           console.log(`Hiiren koordinaatit: X=${x}, Y=${y}`);
 
           koordinaatti.innerHTML = `X: ${x}, Y: ${y}`;
@@ -300,6 +301,6 @@
           koordinaatti.onmousemove = naytakoordinaatti;
         }
       </script>
-    </p>
+   
   </body>
 </html>
