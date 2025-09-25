@@ -285,6 +285,20 @@
             viesti.innerHTML = "The field is empty, pls write!";
           }
         };
+        const koordinaatti = document.getElementById("coordinates");
+
+        function naytakoordinaatti(event) {
+          const x = event.offsetX;
+          const y = event.offsetY;
+          
+          console.log(`Hiiren koordinaatit: X=${x}, Y=${y}`);
+
+          koordinaatti.innerHTML = `X: ${x}, Y: ${y}`;
+        }
+
+        if (koordinaatti) {
+          koordinaatti.onmousemove = naytakoordinaatti;
+        }
       </script>
     </p>
   </body>
