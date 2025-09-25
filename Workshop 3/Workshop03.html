@@ -140,7 +140,7 @@
     <form>
       <textarea id="textdata"></textarea><br />
       <span id="charcount"></span>
-      <button>Lähetä</button>
+      <button id="Nappikolme">Lähetä</button>
     </form>
     <hr />
     <h2>Harjoitus 4</h2>
@@ -200,38 +200,38 @@
 
         function showTable() {
           const htmlTaulukko = `
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nimi</th>
-                        <th>Tehtävä</th>
-                        <th>Palkka</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Maija</td>
-                        <td>Raketti-insinööri</td>
-                        <td>100€</td>
-                    </tr>
-                    <tr>
-                        <td>Antti</td>
-                        <td>Markkinointi harjoittelija</td>
-                        <td>5000€</td>
-                    </tr>
-                    <tr>
-                        <td>Pekka</td>
-                        <td>Astronautti</td>
-                        <td>300€</td>
-                    </tr>
-                    <tr>
-                        <td>Maija</td>
-                        <td>Siivooja</td>
-                        <td>3000€</td>
-                    </tr>
-                </tbody>
-            </table>
-        `;
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nimi</th>
+                                <th>Tehtävä</th>
+                                <th>Palkka</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maija</td>
+                                <td>Raketti-insinööri</td>
+                                <td>100€</td>
+                            </tr>
+                            <tr>
+                                <td>Antti</td>
+                                <td>Markkinointi harjoittelija</td>
+                                <td>5000€</td>
+                            </tr>
+                            <tr>
+                                <td>Pekka</td>
+                                <td>Astronautti</td>
+                                <td>300€</td>
+                            </tr>
+                            <tr>
+                                <td>Maija</td>
+                                <td>Siivooja</td>
+                                <td>3000€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                `;
 
           taulukonPaikka.innerHTML = htmlTaulukko;
         }
@@ -253,11 +253,38 @@
           Otsikkoyksi.style.color = "red";
           Otsikkoyksi.innerHTML = "Bye bye mouse!";
         }
-
-        // Lisätään tapahtumakuuntelija
         {
           Otsikkoyksi.addEventListener("click", aktivoitua);
         }
+
+        const tkentta = document.getElementById("textdata");
+        const viesti = document.getElementById("charcount");
+        const btnKolme = document.getElementById("Nappikolme");
+
+        function fokushiiri() {
+          viesti.innerHTML = "Please fill in the form with proper data.";
+
+          tkentta.style.backgroundColor = "#ffc";
+        }
+
+        {
+          tkentta.onfocus = fokushiiri;
+        }
+        function pohjassa() {
+          const pituus = tkentta.value.length;
+
+          viesti.innerHTML = `Merkkejä: ${pituus}`;
+        }
+        tkentta.addEventListener("keydown", pohjassa);
+        btnKolme.onclick = function (event) {
+          event.preventDefault();
+
+          const arvo = tkentta.value.trim();
+
+          if (arvo === "") {
+            viesti.innerHTML = "The field is empty, pls write!";
+          }
+        };
       </script>
     </p>
   </body>
