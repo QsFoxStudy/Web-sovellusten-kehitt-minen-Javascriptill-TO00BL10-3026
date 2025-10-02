@@ -150,7 +150,7 @@
     <br />
     <div class="p-tyyli">
       <h3>Palkkalomake</h3>
-      Nimi Nimi
+      Nimi
       <label for="nimi">:</label>
       <input type="text" name="textfield" id="nimi" />
       <br />
@@ -160,7 +160,13 @@
       Palkka:
       <input type="text" name="textfield3" id="palkka" />
       <br /><br />
-      <input type="button" name="Insert" id="Insert" value="Lisää" />
+      <input
+        type="button"
+        name="Insert"
+        id="Insert"
+        value="Lisää"
+        onclick="lisaaTietoTaulukkoon()"
+      />
     </div>
     <table id="data" class="display">
       <thead>
@@ -374,6 +380,58 @@
         const kuva = document.getElementById("carimage");
         if (kuva) {
           kuva.style.border = "none";
+        }
+      }
+      function lisaaTietoTaulukkoon() {
+        const nimiInput = document.getElementById("nimi");
+        const tehtavaInput = document.getElementById("tehtava");
+        const palkkaInput = document.getElementById("palkka");
+
+        const nimi = nimiInput.value.trim();
+        const tehtava = tehtavaInput.value.trim();
+        const palkkaStr = palkkaInput.value.trim();
+
+        let virheviesti = "";
+
+        if (nimi.length <= 5) {
+          virheviesti += "Nimen täytyy olla yli 5 merkkiä pitkä.\n";
+        }
+
+        if (tehtava === "") {
+          virheviesti += "Tehtävä-kenttä ei saa olla tyhjä.\n";
+        }
+
+        const palkka = parseInt(palkkaStr);
+
+        if (isNaN(palkka) || palkka <= 0) {
+          virheviesti += "Palkan tulee olla numero ja suurempi kuin 0.\n";
+        }
+
+        if (virheviesti !== "") {
+          alert("VIRHE:\n" + virheviesti);
+          return;
+        }
+
+        lisaaRivi(nimi, tehtava, palkkaStr);
+
+        nimiInput.value = "";
+        tehtavaInput.value = "";
+        palkkaInput.value = "";
+      }
+
+      function lisaaRivi(nimi, tehtava, palkkaStr) {
+        const tableBody = document.querySelector("#data tbody");
+
+        if (tableBody) {
+          const uusiRivi = tableBody.insertRow();
+
+          const nimiSolu = uusiRivi.insertCell(0);
+          const tehtavaSolu = uusiRivi.insertCell(1);
+          const palkkaSolu = uusiRivi.insertCell(2);
+
+          nimiSolu.textContent = nimi;
+          tehtavaSolu.textContent = tehtava;
+          palkkaSolu.textContent = "$" + palkkaStr;
         }
       }
     </script>
