@@ -1,0 +1,7 @@
+#loremteksti {
+    /* em on oletuksena inline. Muuta se block-tyyppiseksi, jotta marginaalit toimivat kunnolla */
+    display: block; 
+    
+    /* Lisää tyhjää tilaa elementin alapuolelle (esim. 20 pikseliä) */
+    margin-bottom: 20px; 
+}
