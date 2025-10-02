@@ -115,8 +115,8 @@
     <br />
     <img
       alt="Auto"
-      onmouseover=""
-      onmouseout=""
+      onmouseover="lisaaReunus()"
+      onmouseout="poistaReunus()"
       style="left: 0px; opacity: 1"
       src="https://www.bmw.fi/content/dam/bmw/common/all-models/m-series/m8-coupe/2022/navigation/bmw-8series-coupe-modellfinder.png"
       width="400"
@@ -336,19 +336,22 @@
         const carImage = document.getElementById("carimage");
         let uusiKuvaSrc = "";
 
-        
         switch (valittuauto) {
           case "BMW":
-            uusiKuvaSrc = "https://upload.wikimedia.org/wikipedia/commons/d/d4/Bmw_328.jpg"; 
-			break;
+            uusiKuvaSrc =
+              "https://upload.wikimedia.org/wikipedia/commons/d/d4/Bmw_328.jpg";
+            break;
           case "Audi":
-            uusiKuvaSrc = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Audi_A8_2013_%2811209850785%29.jpg/1280px-Audi_A8_2013_%2811209850785%29.jpg"; 
+            uusiKuvaSrc =
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Audi_A8_2013_%2811209850785%29.jpg/1280px-Audi_A8_2013_%2811209850785%29.jpg";
             break;
           case "Mercedes":
-            uusiKuvaSrc = "https://upload.wikimedia.org/wikipedia/commons/7/75/Mercedes-Benz_300SL_Coupe_1955_1956.jpg"; 
-			break;
+            uusiKuvaSrc =
+              "https://upload.wikimedia.org/wikipedia/commons/7/75/Mercedes-Benz_300SL_Coupe_1955_1956.jpg";
+            break;
           case "Volvo":
-            uusiKuvaSrc = "https://upload.wikimedia.org/wikipedia/commons/7/76/Volvo_544.jpg"; 
+            uusiKuvaSrc =
+              "https://upload.wikimedia.org/wikipedia/commons/7/76/Volvo_544.jpg";
             break;
           default:
             uusiKuvaSrc =
@@ -357,6 +360,20 @@
 
         if (carImage) {
           carImage.src = uusiKuvaSrc;
+        }
+      }
+
+      function lisaaReunus() {
+        const kuva = document.getElementById("carimage");
+        if (kuva) {
+          kuva.style.border = "5px solid blue";
+        }
+      }
+
+      function poistaReunus() {
+        const kuva = document.getElementById("carimage");
+        if (kuva) {
+          kuva.style.border = "none";
         }
       }
     </script>
