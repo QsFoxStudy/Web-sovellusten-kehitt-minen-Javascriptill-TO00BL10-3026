@@ -1,7 +1,34 @@
 #loremteksti {
-    /* em on oletuksena inline. Muuta se block-tyyppiseksi, jotta marginaalit toimivat kunnolla */
-    display: block; 
-    
-    /* Lisää tyhjää tilaa elementin alapuolelle (esim. 20 pikseliä) */
-    margin-bottom: 20px; 
+
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+#data {
+
+    border: 1px;
+
+}
+
+.p-tyyli {
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#data {
+    display: table;
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 25%;
+}
+
+
+#data th,
+#data td {
+    display: table-cell;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
 }
