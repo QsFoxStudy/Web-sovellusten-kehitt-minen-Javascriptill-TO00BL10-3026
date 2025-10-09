@@ -1,10 +1,11 @@
 #form {
-    margin-top: 8rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', sans-serif;
     align-items: center;
     height: 20vh;
+    background-color: lightblue;
 
 }
 
@@ -21,7 +22,7 @@
 }
 
 #lista {
-    margin-top: 1rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', sans-serif;
