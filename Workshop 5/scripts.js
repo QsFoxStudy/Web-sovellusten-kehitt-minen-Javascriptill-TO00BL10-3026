@@ -1,4 +1,4 @@
-// Harjoitus 1: Yhteystietolomake
+// Harjoitus 1 ja 3: Yhteystietolomake
 document.querySelector("form").onsubmit = function(e) {
     e.preventDefault();
     const name = document.querySelector("input[name='name']");
