@@ -12,13 +12,15 @@
     </div>
     <div id="listadiv">
       <form>
-        <label for="items">Päivittäistavarat</label>
-        <input type="text" id="items" name="items" />
-        <input type="button" value="Add" id="nappi"/>
+        <label for="tavara">Lisää uusi ostos:</label>
+        <input type="text" id="tavara">
+        <button type="button" id="nappi">Lisää</button>
+        <button type="button" id="poisto-nappi">Poista</button>
+        <button type="button" id="tyhjennä-nappi">Tyhjennä</button>
       </form>
     </div>
     <div id="lista">
-      <h2>Tähän listan ostokset</h2>
+      <ul id="lista-ostokset"></ul>
     </div>
     <script src="script.js"></script>
   </body>
