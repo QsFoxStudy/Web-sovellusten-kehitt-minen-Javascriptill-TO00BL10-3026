@@ -1,6 +1,6 @@
 body {
 
-    background: linear-gradient(blue, lightblue);
+    background: linear-gradient(lightblue, rgb(0, 68, 255));
     margin: 0;
     min-height: 100vh;
 }
@@ -26,7 +26,7 @@ body {
     font-size: xx-large;
     text-align: center;
     text-decoration: underline;
-    text-decoration-color: white;
+    text-decoration-color: black;
 }
 
 
@@ -45,6 +45,7 @@ body {
 
     display: block;
     margin-bottom: 1em;
+    margin-top: -0.5em;
     height: 2em;
     font-size: 1.5em;
 }
@@ -53,27 +54,33 @@ label {
 
     display: block;
     height: 2em;
-    font-size: 2em;
-    
-}
-
-#lista-ostokset {
-
-    margin-left: 0;
-    padding-left: 0;
+    font-size: 1.6em;
+    color: black
 }
 
 #lista-ostokset li {
-
-    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.3em;
     padding: 5px 0;
+    position: relative;
+}
 
+#lista-ostokset li::before {
+    content: "🎁";
+    position: absolute;
+    left: -1.6em;
+    color: black;
+    font-size: 0.7em;
 }
 
 .ostettu {
 
     text-decoration: line-through;
-    text-decoration-color: #ffffff;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #007BFF;
+    color: #999;
 
 }
 
@@ -102,7 +109,8 @@ label {
 }
 
 button {
-    height: fit-content;
+
+    height: auto;
     margin-top: 1em;
     font-size: 1.2em;
     background-color: #d9ff00;
@@ -115,4 +123,5 @@ input[type="checkbox"] {
 
     transform: scale(2);
     vertical-align: middle;
+    margin-left: 2px;
 }
