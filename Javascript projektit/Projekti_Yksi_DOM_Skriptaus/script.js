@@ -5,17 +5,17 @@ document
   .getElementById("ostoslomake")
   .addEventListener("submit", function (event) {
     event.preventDefault();
-    lisaalistaan();
+    lisaaListaan();
   });
 
-document.getElementById("poisto-nappi").addEventListener("click", listapoisto);
+document.getElementById("poisto-nappi").addEventListener("click", poistaViimeinen);
 document
   .getElementById("tyhjennä-nappi")
   .addEventListener("click", function () {
     lista.innerHTML = "";
   });
 
-function lisaalistaan() {
+function lisaaListaan() {
   const listateksti = kenttä.value.trim();
 
   if (listateksti === "" || listateksti.length < 3) {
@@ -26,14 +26,14 @@ function lisaalistaan() {
 
   kenttä.className = "";
 
-  const listarivi = luodaanlistarivi(listateksti);
+  const listarivi = luoListaRivi(listateksti);
 
   lista.appendChild(listarivi);
 
   kenttä.value = "";
 }
 
-function listapoisto() {
+function poistaViimeinen() {
   const listanviimeinen = lista.lastElementChild;
 
   if (listanviimeinen) {
@@ -41,7 +41,7 @@ function listapoisto() {
   }
 }
 
-function luodaanlistarivi(teksti) {
+function luoListaRivi(teksti) {
   const listarivi = document.createElement("li");
 
   const tekstispan = document.createElement("span");
