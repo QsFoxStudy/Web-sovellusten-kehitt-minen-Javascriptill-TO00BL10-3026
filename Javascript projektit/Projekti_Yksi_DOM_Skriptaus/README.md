@@ -1,8 +1,8 @@
 # Projektin nimi ja tekijät
 Projekti 1: DOM-skriptaus. To do lista (kauppalista). Tekijänä Kalle Heiskanen.
 ## Verkkolinkit:
-Pääset julkaistuun sovellukseen käsiksi osoitteessa [google.com](https://google.com)
-Linkki projektin videoesittelyyn [google.com](https://google.com)
+Pääset julkaistuun sovellukseen käsiksi osoitteessa https://68f9b83bb78ce189c15eec55--tiny-torrone-56f7fb.netlify.app/
+Linkki projektin videoesittelyyn https://video.laurea.fi/media/To+Do+lista+video/0_9cob1n9h
 
 ## Työn jakautuminen 
 Tein yksin.
