@@ -59,4 +59,4 @@ Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse my�
 
 ## Lisenssi
 
-Esimerkki: MIT-lisenssi @ https://github.com/QsFoxStudy/Web-sovellusten-kehitt-minen-Javascriptill-TO00BL10-3026/blob/main/LICENSE
+MIT-lisenssi @ https://github.com/QsFoxStudy/Web-sovellusten-kehitt-minen-Javascriptill-TO00BL10-3026/blob/main/LICENSE
