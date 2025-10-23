@@ -23,7 +23,7 @@ Oppimistani tukisi jos kurssi olisi painotettu vähemmän etäopiskeluna.
 ## Sisällysluettelo:
 
 - [Tietoja sovelluksesta](#tietoja-sovelluksesta)
-- [Tunnetut virheet/bugit](#tunnetut virheet/bugit)
+- [Tunnetut virheet/bugit](#Tunnetut virheet/bugit)
 - [Kuvakaappaukset](#kuvakaappaukset)
 - [Teknologiat](#teknologiat)
 - [Asennus](#asennus)
