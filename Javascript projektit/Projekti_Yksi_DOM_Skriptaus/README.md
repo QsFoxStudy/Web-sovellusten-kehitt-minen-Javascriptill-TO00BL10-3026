@@ -32,10 +32,10 @@ Oppimistani tukisi jos kurssi olisi painotettu vähemmän etäopiskeluna.
 - [Lisenssi](#lisenssi)
 
 ## Tietoja sovelluksesta
-[Projektin nimi] on sovellus, joka ...
+[To Do-lista] on sovellus, joka on kauppalista johon voi lisätä poistaa tai tyhjentää listan. Listan artikkeleita voi myös merkitä ostetuksi.
 
 ## Tunnetut virheet/bugit
-Kerro jos tiedät sovelluksessa olevan jotain, mikä ei toimi tai toimii heikosti
+Ei pitäisi olla :P
 
 ## Kuvakaappaukset
 Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta  
@@ -44,20 +44,19 @@ Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta
 Kuva: [Kelly Sikkema](https://unsplash.com/@kellysikkema)
 
 ## Teknologiat
-Kuvaa, mitä teknologioita käytettiin ja mikä oli niiden rooli projektissasi.  
-Käytin seuraavia teknologioita: `html`, `css`, ...
+
+Käytin seuraavia teknologioita: `html`, `css`, `javascript`. Html luo graafisen ulkonäön yhdessä css:n kanssa ja javascript luo dynaamisia toimintoja sivun nappuloihin ja lista artikkelijen checkboxiin.
 
 ## Asennus
 Kirjoita lyhyet ohjeet sovelluksen käynnistämiseen ja käyttöön. Esimerkiksi:  
 - lataa kaikki tiedostot ja avaa index.html selaimessasi  
-- lataa tai kloonaa repositorio  
-- suorita `npm install`  
-- ...
+
 
 ## Kiitokset
 Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse myös, jos käytit ChatGPT:tä tai muita tekoälytyökaluja koodauksen aikana ja kerro, miten ne auttoivat sinua.  
-- [John Doe](johndoe.com)  
-- [Beginners guide to BEM](link-goes-here.com)  
+-  Coding2GO. (2025). Learn JavaScript in 60 Minutes: The Ultimate Beginner Course! [YouTube-video]. YouTube. https://www.youtube.com/watch?v=voLJ3CmaM1s 
+-  W3Schools. (2025). W3Schools Online Web Tutorials. Retrieved October 23, 2025, from https://www.w3schools.com/
+-  Käytin teköälyjä kuten Gemini ja CoPilot. Teköälyt auttoivat minua ymmärtämään paremmin miksi jokin koodi ei toiminut kuten halusin ja näin opin virheistäni.
 
 ## Lisenssi
 Valitse projektille lisenssi seuraamalla tätä [opasta](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
