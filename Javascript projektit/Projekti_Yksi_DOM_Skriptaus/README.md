@@ -39,7 +39,7 @@ Ei pitäisi olla :P
 
 ## Kuvakaappaukset
 Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta  
-`![Kirjoittaminen](https://photos.google.com/u/1/photo/AF1QipN03S4Jc9PO1hYnWZkV0hzY5z7VYJ-tZxgn3oMc)`
+Kuva: (https://photos.google.com/u/1/photo/AF1QipN03S4Jc9PO1hYnWZkV0hzY5z7VYJ-tZxgn3oMc)
 
 
 ## Teknologiat
