@@ -51,16 +51,6 @@ function lisaaListaan() {
   kenttä.value = "";
 }
 
-// Funktio, joka poistaa viimeisen ostoksen listasta
-function poistaViimeinen() {
-  const listanviimeinen = lista.lastElementChild;
-
-  // Jos listassa on rivejä, poistetaan viimeinen
-  if (listanviimeinen) {
-    listanviimeinen.remove();
-  }
-}
-
 // Funktio, joka luo uuden <li>-elementin ostokselle
 function luoListaRivi(teksti) {
   // Luodaan uusi listaelementti
@@ -90,4 +80,14 @@ function luoListaRivi(teksti) {
 
   // Palautetaan valmis listaelementti
   return listarivi;
+}
+
+// Funktio, joka poistaa viimeisen ostoksen listasta
+function poistaViimeinen() {
+  const listanviimeinen = lista.lastElementChild;
+
+  // Jos listassa on rivejä, poistetaan viimeinen
+  if (listanviimeinen) {
+    listanviimeinen.remove();
+  }
 }
