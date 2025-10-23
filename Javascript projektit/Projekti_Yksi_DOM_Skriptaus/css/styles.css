@@ -102,4 +102,24 @@ label {
 }
 
 /* Poista-napin tyylit: keltainen tausta ja pieni marginaali */
-#poisto
+#poisto-nappi {
+    background-color: yellow;
+    margin-left: 4px;
+}
+
+/* Yleiset nappien tyylit: koko, fontti ja hover-käyttäytyminen */
+button {
+    height: auto;
+    margin-top: 1em;
+    font-size: 1.2em;
+    background-color: #d9ff00;
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+}
+
+/* Checkboxin tyylit: suurempi koko ja marginaali */
+input[type="checkbox"] {
+    transform: scale(2);
+    vertical-align: middle;
+    margin-left: 2px;
+}
