@@ -59,6 +59,5 @@ Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse my�
 -  Käytin teköälyjä kuten Gemini ja CoPilot. Teköälyt auttoivat minua ymmärtämään paremmin miksi jokin koodi ei toiminut kuten halusin ja näin opin virheistäni.
 
 ## Lisenssi
-Valitse projektille lisenssi seuraamalla tätä [opasta](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
 
 Esimerkki: MIT-lisenssi @ [tekijä](author.com)
