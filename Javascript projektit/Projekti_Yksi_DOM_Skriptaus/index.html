@@ -4,24 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dom Skriptaus</title>
+    <!-- Linkki ulkoiseen tyylitiedostoon -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div id="header">
       <h1>Kauppalista</h1>
     </div>
+
+    <!-- Lomake uuden ostoksen lisäämiseen -->
     <div id="listadiv">
       <form id="ostoslomake">
         <label for="tavara">Lisää uusi ostos:</label>
+        <!-- Tekstikenttä uuden ostoksen syöttämiseen -->
         <input type="text" id="tavara">
+        <!-- Nappi ostoksen lisäämiseen listalle -->
         <button type="submit" id="nappi">Lisää</button>
+        <!-- Nappi viimeisen ostoksen poistamiseen -->
         <button type="button" id="poisto-nappi">Poista</button>
+        <!-- Nappi koko listan tyhjentämiseen -->
         <button type="button" id="tyhjennä-nappi">Tyhjennä</button>
       </form>
     </div>
+
+    <!-- Alue, jossa ostoslista näytetään -->
     <div id="lista">
+      <!-- Varsinainen lista, johon ostokset lisätään -->
       <ul id="lista-ostokset"></ul>
     </div>
+
+    <!-- Linkki JavaScript-tiedostoon -->
     <script src="script.js"></script>
   </body>
 </html>
+

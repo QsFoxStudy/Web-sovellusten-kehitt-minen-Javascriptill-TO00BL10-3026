@@ -1,12 +1,12 @@
+/* Sivun taustaväri liukuvärinä vaaleansinisestä siniseen */
 body {
-
     background: linear-gradient(lightblue, rgb(0, 68, 255));
     margin: 0;
-    min-height: 100vh;
+    min-height: 100vh; /* Vähintään koko näytön korkeus */
 }
 
+/* Lomakealueen tyylit: keskitetty, pystysuuntainen asettelu */
 #listadiv {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +16,8 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* Ylätunnisteen tyylit: otsikko keskitetty ja alleviivattu */
 #header {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,9 +29,8 @@ body {
     text-decoration-color: black;
 }
 
-
+/* Ostoslistan alueen tyylit: keskitetty ja hieman suurempi fontti */
 #lista {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,8 +40,8 @@ body {
     font-size: 1.5em;
 }
 
+/* Tekstikentän tyylit: koko ja marginaalit */
 #tavara {
-
     display: block;
     margin-bottom: 1em;
     margin-top: -0.5em;
@@ -50,14 +49,15 @@ body {
     font-size: 1.5em;
 }
 
+/* Labelin tyylit: koko ja väri */
 label {
-
     display: block;
     height: 2em;
     font-size: 1.6em;
-    color: black
+    color: black;
 }
 
+/* Jokaisen listaelementin tyylit: rivin asettelu ja väli */
 #lista-ostokset li {
     display: flex;
     align-items: center;
@@ -67,6 +67,7 @@ label {
     position: relative;
 }
 
+/* Emoji ennen jokaista listaelementtiä */
 #lista-ostokset li::before {
     content: "🎁";
     position: absolute;
@@ -75,53 +76,30 @@ label {
     font-size: 0.7em;
 }
 
+/* Ostetuksi merkityn tuotteen tyylit: yliviivaus ja harmaa väri */
 .ostettu {
-
     text-decoration: line-through;
     text-decoration-thickness: 2px;
     text-decoration-color: #007BFF;
     color: #999;
-
 }
 
+/* Virheellisen kentän tyylit: punainen reunus ja varjo */
 .virhe {
-
     border: 2px solid red;
     box-shadow: 0 0 5px red;
 }
 
+/* Tyhjennä-napin tyylit: punainen tausta ja marginaali */
 #tyhjennä-nappi {
     margin-left: 60px;
     background-color: red;
 }
 
+/* Lisää-napin tyylit: vihreä tausta */
 #nappi {
-
     background-color: green;
-
 }
 
-#poisto-nappi {
-
-    background-color: yellow;
-    margin-left: 4px;
-
-}
-
-button {
-
-    height: auto;
-    margin-top: 1em;
-    font-size: 1.2em;
-    background-color: #d9ff00;
-    color: rgb(8, 8, 8);
-    cursor: pointer;
-
-}
-
-input[type="checkbox"] {
-
-    transform: scale(2);
-    vertical-align: middle;
-    margin-left: 2px;
-}
+/* Poista-napin tyylit: keltainen tausta ja pieni marginaali */
+#poisto
