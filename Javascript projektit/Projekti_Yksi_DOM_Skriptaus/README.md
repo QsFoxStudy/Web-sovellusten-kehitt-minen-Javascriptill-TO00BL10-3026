@@ -45,7 +45,7 @@ Kuva: [Kelly Sikkema](https://unsplash.com/@kellysikkema)
 
 ## Teknologiat
 
-Käytin seuraavia teknologioita: `html`, `css`, `javascript`. Html luo graafisen ulkonäön yhdessä css:n kanssa ja javascript luo dynaamisia toimintoja sivun nappuloihin ja lista artikkelijen checkboxiin.
+Käytin seuraavia teknologioita: `html`, `css`, `javascript`. Html luo graafisen ulkonäön yhdessä css:n kanssa ja javascript luo dynaamisia toimintoja sivun nappuloihin ja lista artikkelien checkboxiin.
 
 ## Asennus
 Kirjoita lyhyet ohjeet sovelluksen käynnistämiseen ja käyttöön. Esimerkiksi:  
