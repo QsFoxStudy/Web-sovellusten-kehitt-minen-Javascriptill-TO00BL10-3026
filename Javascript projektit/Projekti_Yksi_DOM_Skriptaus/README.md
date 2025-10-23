@@ -60,4 +60,4 @@ Lista l채hteist채 ja esimerkeist채, joita k채ytit projektin aikana. Mainitse my�
 
 ## Lisenssi
 
-Esimerkki: MIT-lisenssi @ [tekij채](author.com)
+Esimerkki: MIT-lisenssi @ https://github.com/QsFoxStudy/Web-sovellusten-kehitt-minen-Javascriptill-TO00BL10-3026/blob/main/LICENSE
