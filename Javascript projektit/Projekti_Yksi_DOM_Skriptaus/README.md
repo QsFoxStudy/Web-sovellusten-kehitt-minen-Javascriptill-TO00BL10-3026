@@ -1,24 +1,23 @@
 # Projektin nimi ja tekijät
-Projektin nimi ja kaikki mukana olevat tekijät. 
-
+Projekti 1: DOM-skriptaus. To do lista (kauppalista). Tekijänä Kalle Heiskanen.
 ## Verkkolinkit:
 Pääset julkaistuun sovellukseen käsiksi osoitteessa [google.com](https://google.com)
 Linkki projektin videoesittelyyn [google.com](https://google.com)
 
 ## Työn jakautuminen 
-Miten työmäärä jaettiin? Kuka teki mitä? Miten yhteistyö sujui?
+Tein yksin.
 
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
-Mielestäni onnistuin...
-Parantamista olisi...
-Sovelluksesta jäi puuttumaan...
-Koen, että olen oppinut...
-Epäselväksi jäi...
-Antaisin itselleni pisteitä seuraavasti: xx/yy p
+Mielestäni onnistuin yhdistämään html:n ja javascriptin pääosin.
+Parantamista olisi javascriptin kehittäminen ilman teoria apuja.
+Sovelluksesta jäi puuttumaan localstorage ominaisuus.
+Koen, että olen oppinut javascrptin perusteita
+Epäselväksi jäi classname tai classlist asiat mutta ymmärrän ne suurimmalta osin.
+Antaisin itselleni pisteitä seuraavasti: 6/10 p
 
 ## Palaute opettajalle kurssista sekä itse opetuksesta tähän saakka
-Kurssi sekä lähiopetus ovat tuntuneet... 
-Oppimistani tukisi jos...
+Kurssi sekä lähiopetus ovat tuntuneet hyvin rakennetulta. 
+Oppimistani tukisi jos kurssi olisi painotettu vähemmän etäopiskeluna.
 
 
 ## Sisällysluettelo:
