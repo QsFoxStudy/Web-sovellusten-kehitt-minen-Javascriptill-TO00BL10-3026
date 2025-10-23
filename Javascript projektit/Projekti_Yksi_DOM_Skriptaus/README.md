@@ -23,7 +23,7 @@ Oppimistani tukisi jos kurssi olisi painotettu vähemmän etäopiskeluna.
 ## Sisällysluettelo:
 
 - [Tietoja sovelluksesta](#tietoja-sovelluksesta)
-- [Tunnetut virheet/bugit](#Tunnetut virheet/bugit)
+- [Tunnetut virheet/bugit](#tunnetut virheet/bugit)
 - [Kuvakaappaukset](#kuvakaappaukset)
 - [Teknologiat](#teknologiat)
 - [Asennus](#asennus)
@@ -32,7 +32,7 @@ Oppimistani tukisi jos kurssi olisi painotettu vähemmän etäopiskeluna.
 - [Lisenssi](#lisenssi)
 
 ## Tietoja sovelluksesta
-[To Do-lista] on sovellus, joka on kauppalista johon voi lisätä poistaa tai tyhjentää listan. Listan artikkeleita voi myös merkitä ostetuksi.
+[To Do-lista] on kauppalista sovellus jossa voi lisätä, poistaa tai tyhjentää listan. Listan artikkeleita voi myös merkitä ostetuksi.
 
 ## Tunnetut virheet/bugit
 Ei pitäisi olla :P
