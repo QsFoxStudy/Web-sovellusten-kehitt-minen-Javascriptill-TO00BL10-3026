@@ -1,4 +1,78 @@
+/* Kokonaisvaltainen sivun tyyli */
 body {
-    background-color: aquamarine;
+    font-family: 'Inter', sans-serif; /* Käytettävä fontti */
+    background-color: #0f172a;        /* Taustaväri (tummansininen) */
+    color: #e5e7eb;                   /* Tekstin väri (vaalea harmaa) */
+    display: flex;                    /* Flexbox-asettelu */
+    justify-content: center;          /* Keskitetään vaakasuunnassa */
+    align-items: flex-start;          /* Asetetaan sisältö ylös */
+    min-height: 100vh;                /* Vähintään koko näkymän korkeus */
+    margin: 0;                        /* Poistetaan oletusmarginaali */
+    padding: 2rem;                    /* Sisätyhjä reunoille */
 }
 
+/* Pääkontti sivun sisällölle */
+body > div {
+    width: 100%;                      /* Täysi leveys */
+    max-width: 800px;                 /* Maksimileveys */
+    background-color: #1f2937;        /* Tumma tausta */
+    padding: 2rem;                    /* Sisätyhjä */
+    border-radius: 1rem;              /* Pyöristetyt kulmat */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Varjo */
+}
+
+/* Otsikkoalue */
+header {
+    text-align: center;               /* Keskitetty teksti */
+    margin-bottom: 2rem;              /* Väli alaspäin */
+}
+
+header h1 {
+    color: #4f46e5;                   /* Otsikon väri (violetti) */
+    margin-bottom: 0.25rem;           /* Pieni väli otsikon alle */
+}
+
+/* Artistin valintaosio */
+section {
+    text-align: center;               /* Keskitetty sisältö */
+    margin-bottom: 2rem;              /* Väli alaspäin */
+}
+
+/* Pudotusvalikko */
+select {
+    background-color: #111827;        /* Tumma tausta */
+    color: white;                     /* Tekstin väri */
+    border: 1px solid #374151;        /* Reunan väri */
+    border-radius: 0.5rem;            /* Pyöristetyt kulmat */
+    padding: 0.5rem 1rem;             /* Sisätyhjä */
+    font-size: 1rem;                  /* Tekstin koko */
+}
+
+/* Albumilistan kontti */
+main > div {
+    background-color: #111827;        /* Tumma tausta */
+    padding: 1rem;                    /* Sisätyhjä */
+    border-radius: 0.75rem;           /* Pyöristetyt kulmat */
+}
+
+/* Albumit-otsikko */
+h2 {
+    border-bottom: 1px solid #374151; /* Alaviiva */
+    padding-bottom: 0.5rem;           /* Väli otsikon ja viivan välillä */
+    margin-bottom: 1rem;              /* Väli seuraavaan elementtiin */
+}
+
+/* Albumikortti */
+.albumikortti {
+    background-color: #1f2937;        /* Kortin tausta */
+    border: 1px solid #374151;        /* Kortin reuna */
+    border-radius: 0.5rem;            /* Pyöristetyt kulmat */
+    padding: 0.75rem;                 /* Sisätyhjä */
+    margin-bottom: 0.5rem;            /* Väli korttien välillä */
+    transition: background-color 0.2s; /* Hover-efekti pehmeästi */
+}
+
+/* Hover-efekti albumikortille */
+.albumikortti:hover {
+    background-color: #2e3b4d;        /* Kortti vaalenee hoverissa */
+}
