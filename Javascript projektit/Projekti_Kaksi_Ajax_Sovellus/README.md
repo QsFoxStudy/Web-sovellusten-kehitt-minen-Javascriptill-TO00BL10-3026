@@ -44,7 +44,7 @@ Kuva: (https://photos.google.com/u/1/photo/AF1QipOqpxlsv0Uh4grM7ByETEJwkMhNXbymN
 
 ## Teknologiat
 
-Käytin seuraavia teknologioita: `html`, `css`, `javascript`. Html luo graafisen ulkonäön yhdessä css:n kanssa ja javascript luo dynaamisia toimintoja JSON avulla hakien sen hetkiset tiedot Last.fm api:n kautta.
+Käytin seuraavia teknologioita: `html`, `css`, `javascript`. Html luo graafisen ulkonäön yhdessä css:n kanssa ja javascript luo dynaamisia toimintoja JSON:in avulla hakien reaaliaikaiset tiedot Last.fm api:n kautta.
 
 ## Asennus
 Kirjoita lyhyet ohjeet sovelluksen käynnistämiseen ja käyttöön. Esimerkiksi:  
@@ -54,7 +54,7 @@ Kirjoita lyhyet ohjeet sovelluksen käynnistämiseen ja käyttöön. Esimerkiksi
 ## Kiitokset
 Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse myös, jos käytit ChatGPT:tä tai muita tekoälytyökaluja koodauksen aikana ja kerro, miten ne auttoivat sinua.  
 -  W3Schools. (2025). W3Schools Online Web Tutorials. Retrieved October 23, 2025, from https://www.w3schools.com/
--  Käytin teköälyjä kuten Gemini, CoPilot ja Chatgpt. Teköälyt auttoivat minua ymmärtämään paremmin miksi jokin koodi ei toiminut kuten halusin ja näin opin virheistäni käymällä koodin     uudelleen läpi ja tutkimalla mitä uudet osat tekevät.
+-  Käytin teköälyjä kuten Gemini, CoPilot ja Chatgpt. Teköälyt auttoivat minua ymmärtämään paremmin miksi jokin koodi ei toiminut kuten halusin ja näin opin virheistäni käymällä koodin     uudelleen läpi ja tutkimalla mitä konseptejä korjaukset sisältävät.
 
 ## Lisenssi
 
