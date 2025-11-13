@@ -1,7 +1,7 @@
 # Projektin nimi ja tekijät
 Projekti 2a: AJAX-sovellus REST APIa hyödyntäen. 2. Music Information APP utilizing Live JSON API from LiveFM aka Musiikkitietosovellus. Tekijänä Kalle Heiskanen.
 ## Verkkolinkit:
-Pääset julkaistuun sovellukseen käsiksi osoitteessa 
+Pääset julkaistuun sovellukseen käsiksi osoitteessa https://69160eb434b50e25eacbef9d--splendid-tulumba-bd336e.netlify.app/
 Linkki projektin videoesittelyyn 
 
 ## Työn jakautuminen 
