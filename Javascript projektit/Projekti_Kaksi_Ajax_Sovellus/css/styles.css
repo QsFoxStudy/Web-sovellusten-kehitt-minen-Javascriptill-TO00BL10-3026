@@ -1,78 +1,157 @@
 /* Kokonaisvaltainen sivun tyyli */
 body {
-    font-family: 'Inter', sans-serif; /* Käytettävä fontti */
-    background-color: #0f172a;        /* Taustaväri (tummansininen) */
-    color: #e5e7eb;                   /* Tekstin väri (vaalea harmaa) */
-    display: flex;                    /* Flexbox-asettelu */
-    justify-content: center;          /* Keskitetään vaakasuunnassa */
-    align-items: flex-start;          /* Asetetaan sisältö ylös */
-    min-height: 100vh;                /* Vähintään koko näkymän korkeus */
-    margin: 0;                        /* Poistetaan oletusmarginaali */
-    padding: 2rem;                    /* Sisätyhjä reunoille */
+    font-family: 'Inter', sans-serif;
+    /* Käytettävä fontti */
+    background-color: #0f172a;
+    /* Taustaväri (tummansininen) */
+    color: #e5e7eb;
+    /* Tekstin väri (vaalea harmaa) */
+    display: flex;
+    /* Flexbox-asettelu */
+    justify-content: center;
+    /* Keskitetään vaakasuunnassa */
+    align-items: flex-start;
+    /* Asetetaan sisältö ylös */
+    min-height: 100vh;
+    /* Vähintään koko näkymän korkeus */
+    margin: 0;
+    /* Poistetaan oletusmarginaali */
+    padding: 2rem;
+    /* Sisätyhjä reunoille */
 }
 
 /* Pääkontti sivun sisällölle */
-body > div {
-    width: 100%;                      /* Täysi leveys */
-    max-width: 800px;                 /* Maksimileveys */
-    background-color: #1f2937;        /* Tumma tausta */
-    padding: 2rem;                    /* Sisätyhjä */
-    border-radius: 1rem;              /* Pyöristetyt kulmat */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Varjo */
+body>div {
+    width: 100%;
+    /* Täysi leveys */
+    max-width: 1024px;
+    /* Maksimileveys */
+    background-color: #1f2937;
+    /* Tumma tausta */
+    padding: 2rem;
+    /* Sisätyhjä */
+    border-radius: 1rem;
+    /* Pyöristetyt kulmat */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    /* Varjo */
 }
 
 /* Otsikkoalue */
 header {
-    text-align: center;               /* Keskitetty teksti */
-    margin-bottom: 2rem;              /* Väli alaspäin */
+    text-align: center;
+    /* Keskitetty teksti */
+    margin-bottom: 2rem;
+    /* Väli alaspäin */
 }
 
 header h1 {
-    color: #4f46e5;                   /* Otsikon väri (violetti) */
-    margin-bottom: 0.25rem;           /* Pieni väli otsikon alle */
+    color: #4f46e5;
+    /* Otsikon väri (violetti) */
+    margin-bottom: 0.25rem;
+    /* Pieni väli otsikon alle */
 }
 
 /* Artistin valintaosio */
 section {
-    text-align: center;               /* Keskitetty sisältö */
-    margin-bottom: 2rem;              /* Väli alaspäin */
+    text-align: center;
+    /* Keskitetty sisältö */
+    margin-bottom: 2rem;
+    /* Väli alaspäin */
 }
 
 /* Pudotusvalikko */
 select {
-    background-color: #111827;        /* Tumma tausta */
-    color: white;                     /* Tekstin väri */
-    border: 1px solid #374151;        /* Reunan väri */
-    border-radius: 0.5rem;            /* Pyöristetyt kulmat */
-    padding: 0.5rem 1rem;             /* Sisätyhjä */
-    font-size: 1rem;                  /* Tekstin koko */
+    background-color: #111827;
+    /* Tumma tausta */
+    color: white;
+    /* Tekstin väri */
+    border: 1px solid #374151;
+    /* Reunan väri */
+    border-radius: 0.5rem;
+    /* Pyöristetyt kulmat */
+    padding: 0.5rem 1rem;
+    /* Sisätyhjä */
+    font-size: 1rem;
+    /* Tekstin koko */
 }
 
 /* Albumilistan kontti */
-main > div {
-    background-color: #111827;        /* Tumma tausta */
-    padding: 1rem;                    /* Sisätyhjä */
-    border-radius: 0.75rem;           /* Pyöristetyt kulmat */
+main>div {
+    background-color: #111827;
+    /* Tumma tausta */
+    padding: 1rem;
+    /* Sisätyhjä */
+    border-radius: 0.75rem;
+    /* Pyöristetyt kulmat */
 }
 
 /* Albumit-otsikko */
 h2 {
-    border-bottom: 1px solid #374151; /* Alaviiva */
-    padding-bottom: 0.5rem;           /* Väli otsikon ja viivan välillä */
-    margin-bottom: 1rem;              /* Väli seuraavaan elementtiin */
+    border-bottom: 1px solid #374151;
+    /* Alaviiva */
+    padding-bottom: 0.5rem;
+    /* Väli otsikon ja viivan välillä */
+    margin-bottom: 1rem;
+    /* Väli seuraavaan elementtiin */
+}
+
+/* Albumikorttien flexbox-kontti, jotta ne asettuvat vierekkäin */
+#albumilista {
+    display: flex;
+    flex-wrap: wrap;
+    /* Salli rivinvaihto */
+    gap: 1.5rem;
+    /* Väli korttien välillä */
+    justify-content: center;
+    /* Keskitä kortit */
 }
 
 /* Albumikortti */
 .albumikortti {
-    background-color: #1f2937;        /* Kortin tausta */
-    border: 1px solid #374151;        /* Kortin reuna */
-    border-radius: 0.5rem;            /* Pyöristetyt kulmat */
-    padding: 0.75rem;                 /* Sisätyhjä */
-    margin-bottom: 0.5rem;            /* Väli korttien välillä */
-    transition: background-color 0.2s; /* Hover-efekti pehmeästi */
+    background-color: #1f2937;
+    /* Kortin tausta */
+    border: 1px solid #374151;
+    /* Kortin reuna */
+    border-radius: 0.5rem;
+    /* Pyöristetyt kulmat */
+    padding: 0.75rem;
+    /* Sisätyhjä */
+    width: 100%;
+    /*Koko leveys käyttön pienemmässä näkymässä*/
+    max-width: 150px;
+    /*Maksimi leveys*/
+    flex-grow: 1;
+    /*Kortti kasvaa täyttämään tilan*/
+    transition: background-color 0.2s, transform 0.2s;
+    /*lisättiin siirtymä*/
+}
+
+/* Albumikuvan skaalaus */
+.albumikortti img {
+    display: block;
+    max-width: 100%;
+    /* Varmistaa, että kuva ei ylitä kortin leveyttä */
+    height: auto;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Hover-efekti albumikortille */
 .albumikortti:hover {
-    background-color: #2e3b4d;        /* Kortti vaalenee hoverissa */
+    background-color: #2e3b4d;
+    /* Kortti vaalenee hoverissa */
+    transform: translateY(-3px);
+    /*Pieni nostoefekti ylöspäin*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /*Varjo nosteeseen*/
+}
+
+a:link {
+    color: yellow;
+    /* Asettaa linkin tekstin keltaiseksi */
+}
+
+a:visited {
+    color: red;
+    /* Asettaa klikatun linkin tekstin punaiseksi */
 }

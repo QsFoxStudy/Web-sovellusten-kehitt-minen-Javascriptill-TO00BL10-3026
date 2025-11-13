@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>
-  <meta charset="UTF-8"> <!-- Määrittää merkistön UTF-8, jotta ääkköset toimivat -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsiivisuus mobiililaitteille -->
-  <title>Musiikkitietosovellus</title> <!-- Sivun otsikko selaimen välilehdessä -->
-  <link rel="stylesheet" href="css/styles.css"> <!-- Liitetään ulkoinen CSS-tyylitiedosto -->
-</head>
-<body>
-  <div> <!-- Pääkontti, joka sisältää koko sovelluksen -->
-    
-    <!-- Yläosa: otsikko ja kuvaus -->
-    <header>
-      <h1>Musiikkitietosovellus</h1>
-      <p>Valitse artisti ja näe suosituimmat albumit</p>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Määrittää merkistön UTF-8, jotta ääkköset toimivat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsiivisuus mobiililaitteille -->
+    <title>Musiikkitietosovellus</title>
+    <!-- Sivun otsikko selaimen välilehdessä -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Liitetään ulkoinen CSS-tyylitiedosto -->
+  </head>
+  <body>
+    <div>
+      <!-- Otsikko ja kuvaus -->
+      <header>
+        <h1>Musiikkitietosovellus</h1>
+        <p>Valitse artisti ja näe suosituimmat albumit</p>
+      </header>
 
-    <!-- Artistin valintalista -->
-    <section>
-      <div>
-        <select id="artistiValinta">
-          <option value="Adele">Adele</option>
-          <option value="Coldplay">Coldplay</option>
-          <option value="Imagine Dragons">Imagine Dragons</option>
-          <option value="Ed Sheeran">Ed Sheeran</option>
-          <option value="Taylor Swift">Taylor Swift</option>
-          <option value="The Weeknd">The Weeknd</option>
-        </select>
-      </div>
-    </section>
+      <!-- Artistin valintalista -->
+      <section>
+        <div>
+          <!--Tällä luodaan pudotusvalikon vaihtoehdot-->
+          <select id="artistiValinta">
+            <option value="Adele">Adele</option>
+            <option value="Coldplay">Coldplay</option>
+            <option value="Imagine Dragons">Imagine Dragons</option>
+            <option value="Ed Sheeran">Ed Sheeran</option>
+            <option value="Taylor Swift">Taylor Swift</option>
+            <option value="The Weeknd">The Weeknd</option>
+          </select>
+        </div>
+      </section>
 
-    <!-- Pääsisältö: albumilista -->
-    <main>
-      <div>
-        <h2>Albumit</h2>
-        <div id="albumilista"></div> <!-- Tänne JavaScript lisää albumit -->
-      </div>
-    </main>
-  </div>
+      <!-- Pääsisältödivi: albumilista -->
+      <main>
+        <!--käytetään main elementtiä saavutettavuuden parantamiseksi-->
+        <div>
+          <h2>Albumit</h2>
+          <div id="albumilista"></div>
+          <!-- Tänne JavaScript lisää albumit -->
+        </div>
+      </main>
+    </div>
 
-  <!-- Liitetään JavaScript-tiedosto, joka hoitaa API-haut ja dynaamisen sisällön -->
-  <script src="script.js"></script>
-</body>
+    <!-- Liitetään ulkoinen JavaScript-tiedosto -->
+    <script src="script.js"></script>
+  </body>
 </html>
