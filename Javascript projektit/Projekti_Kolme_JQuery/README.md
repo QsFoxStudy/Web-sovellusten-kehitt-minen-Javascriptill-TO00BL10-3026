@@ -39,7 +39,8 @@ Ei pitäisi olla :P
 ## Kuvakaappaukset
 Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta  
 Kuva: https://photos.google.com/u/1/photo/AF1QipNr5RzUl_EJ2r-aPXSGcRsOuTaN3h7NNTNTYLSl
-![Sovelluksen näkymä](images\Näyttökuva 2025-12-04 033515.png)
+
+![Sovelluksen näkymä](images/Näyttökuva%202025-12-04%20033515.png)
 
 
 ## Teknologiat
