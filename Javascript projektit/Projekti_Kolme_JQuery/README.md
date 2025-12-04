@@ -31,7 +31,7 @@ Oppimistani tukisi jos kurssi olisi painotettu vähemmän etäopiskeluna.
 - [Lisenssi](#lisenssi)
 
 ## Tietoja sovelluksesta
-[To Do-lista] on jouluinen ostoslistasovellus jossa voi lisätä, poistaa valitut tai tyhjentää listan. Listan artikkeleita voi myös merkitä ostetuksi. Lisätty myös localstorgae ominaisuus.
+[To Do-lista] on jouluinen ostoslistasovellus jossa voi lisätä, poistaa valitut tai tyhjentää listan. Listan artikkeleita voi myös merkitä ostetuksi. Lisätty myös localstorage ominaisuus.
 
 ## Tunnetut virheet ja bugit
 Ei pitäisi olla :P
