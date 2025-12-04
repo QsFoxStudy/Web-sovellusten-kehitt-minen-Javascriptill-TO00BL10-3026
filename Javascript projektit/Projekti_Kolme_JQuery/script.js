@@ -1,3 +1,7 @@
+// Tämä skripti hallinnoi ostoslistaa jQueryllä:
+// Lisää uusia ostoksia listaan
+// Mahdollistaa valittujen poistamisen ja koko listan tyhjentämisen
+// Tallentaa listan localStorageen, jotta se säilyy sivun uudelleenlatauksessa
 // jQueryn "document ready" -funktio korvaa puhtaan JS:n latauskuuntelijan
 $(document).ready(function () {
   // Haetaan elementit jQuery-selektoreilla ($ on lyhenne jQuerylle)
@@ -26,7 +30,7 @@ $(document).ready(function () {
 
   // Funktio, joka luo uuden <li>-elementin ostokselle jQueryllä
   function luoListaRivi(teksti, ostettu = false) {
-    // Luodaan uusi listaelementti ja sen sisältö lennossa
+    // Luodaan uusi listaelementti ja sen sisältö 
     const $listarivi = $("<li>").addClass(
       "flex justify-between items-center py-2 border-b border-gray-200"
     );
@@ -87,28 +91,47 @@ $(document).ready(function () {
     tallennaOstokset();
   }
 
-  // Funktiot localStoragen käyttöön (tämä antaa "ajax-tyyppisen" pysyvyyden ilman backendiä)
-
+  // Funktio, joka tallentaa ostoslistan localStorageen
   function tallennaOstokset() {
+    // Luodaan tyhjä taulukko, johon kerätään kaikki ostokset
     const ostokset = [];
-    // Käytetään jQueryn .each() iteroimaan läpi kaikki listan rivit
+
+    // Käydään läpi jokainen listan <li>-elementti jQueryn .each()-metodilla
     $lista.find("li").each(function () {
+      // Haetaan rivin tekstisisältö (span-elementistä)
       const teksti = $(this).find("span").text();
-      const ostettu = $(this).find("input[type='checkbox']").is(":checked"); // Onko valittu?
+
+      // Tarkistetaan, onko rivin checkbox valittuna (.is(":checked"))
+      const ostettu = $(this).find("input[type='checkbox']").is(":checked");
+
+      // Lisätään ostos taulukkoon objektina { teksti: ..., ostettu: ... }
       ostokset.push({ teksti: teksti, ostettu: ostettu });
     });
-    // Muutetaan objekti merkkijonoksi ja tallennetaan
-    localStorage.setItem("kauppalistaData", JSON.stringify(ostokset));
+
+    // Muutetaan taulukko JSON-merkkijonoksi ja tallennetaan localStorageen
+    // Avain "kauppalistaTieto" toimii tunnisteena, jolla data haetaan myöhemmin
+    localStorage.setItem("kauppalistaTieto", JSON.stringify(ostokset));
   }
 
+  // Funktio, joka lataa ostokset selaimen localStoragesta
   function lataaOstokset() {
-    const storedData = localStorage.getItem("kauppalistaData");
+    // Haetaan tallennettu data localStoragesta avaimella "kauppalistaTieto"
+    const storedData = localStorage.getItem("kauppalistaTieto");
+
+    // Jos dataa löytyy (eli lista on aiemmin tallennettu)
     if (storedData) {
+      // Muutetaan JSON-merkkijono takaisin JavaScript-taulukoksi
       const ostokset = JSON.parse(storedData);
+
+      // Käydään jokainen ostos läpi taulukosta
       ostokset.forEach((item) => {
+        // Luodaan uusi listaelementti (li) ostoksen tiedoista
+        // item.teksti = ostoksen nimi, item.ostettu = checkboxin tila
         const $rivi = luoListaRivi(item.teksti, item.ostettu);
+
+        // Lisätään luotu rivi ostoslistan <ul>-elementtiin
         $lista.append($rivi);
       });
     }
   }
-}); // Sulkee document.ready
+}); 

@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- ... (head-osio kuten yllä, sisältäen Tailwind CDN:n) ... -->
     <meta charset="UTF-8" />
+    <!-- Määrittää että sivu skaalautuu mobiililaitteille -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>J_Query_Kauppalista</title>
+
+    <!-- TailwindCSS linkki -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- jQuery linkki: käytetään lomakkeen ja listan käsittelyyn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- linkki js tiedostoon -->
     <script src="script.js"></script>
   </head>
-  <!-- Annetaan bodylle taustaväri ja perusfontit -->
-  <body class="bg-gray-100 font-sans p-4 bg-[url('images/apple-4959578_1920.jpg')] bg-cover bg-fixed">
-    <!-- Container ja Header -->
-    <div class="max-w-lg md:max-w-xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-10">
+  <!-- Body: tausta harmaa + fontti sans-serif + kuva taustalla -->
+  <body
+    class="bg-gray-100 font-sans p-4 bg-[url('images/apple-4959578_1920.jpg')] bg-cover bg-fixed"
+  >
+    <!-- Keskitetty laatikko, jossa ostoslista sijaitsee -->
+    <div
+      class="max-w-lg md:max-w-xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-10">
+      <!-- Otsikko -->
       <div id="header" class="mb-6">
         <h1 class="text-3xl font-bold text-gray-800">Joulun ostoslista</h1>
       </div>
@@ -20,55 +30,54 @@
       <!-- Lomake uuden ostoksen lisäämiseen -->
       <div id="listadiv">
         <form id="ostoslomake" class="mb-6">
+
+          <!-- Tekstikentän label -->
           <label
             for="tavara"
-            class="block text-sm font-medium text-gray-700 mb-2"
-            >Lisää uusi ostos:</label
-          >
+            class="block text-sm font-medium text-gray-700 mb-2">
+            Lisää uusi ostos:
+          </label>
 
-          <!-- Tekstikenttä: Full width, padding, border, shadow -->
+          <!-- Tekstikenttä, johon käyttäjä syöttää ostoksen -->
           <input
             type="text"
             id="tavara"
-            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-          />
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"/>
 
-          <!-- Nappi: Perustyyli, väri, hover-efekti ja marginaali -->
+          <!-- Lisää-nappi: lähettää lomakkeen ja lisää uuden ostoksen listaan -->
           <button
             type="submit"
             id="nappi"
-            class="mt-4 w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-transparent"
-          >
+            class="mt-4 w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-700 hover:bg-red-800 focus:ring-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-transparent">
             Lisää
           </button>
 
-          <!-- Poisto- ja tyhjennysnapit vierekkäin -->
+          <!-- Poisto- ja tyhjennä-napit -->
           <div class="flex justify-between mt-4">
+            <!-- Poista valitut: poistaa listasta ne ostokset, jotka on merkitty -->
             <button
               type="button"
               id="poisto-nappi"
-              class="w-1/2 mr-2 py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-transparent"
-            >
+              class="w-1/2 mr-2 py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-transparent">
               Poista valitut
             </button>
+
+            <!-- Tyhjennä lista: poistaa kaikki ostokset listasta -->
             <button
               type="button"
               id="tyhjennä-nappi"
-              class="w-1/2 ml-2 py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-transparent"
-            >
+              class="w-1/2 ml-2 py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-transparent">
               Tyhjennä lista
             </button>
           </div>
         </form>
       </div>
 
-      <!-- Ostoslista-alue -->
+      <!-- Ostoslista -->
       <div id="lista">
         <h2 class="text-xl font-semibold mb-3 text-gray-800">Ostokset</h2>
-        <!-- Varsinainen lista, johon ostokset lisätään -->
-        <ul id="lista-ostokset" class="space-y-3">
-          <!-- JS lisää rivit tänne -->
-        </ul>
+        <!-- Tänne jQuery lisää <li>-elementtejä ostoksista -->
+        <ul id="lista-ostokset" class="space-y-3"></ul>
       </div>
     </div>
   </body>
