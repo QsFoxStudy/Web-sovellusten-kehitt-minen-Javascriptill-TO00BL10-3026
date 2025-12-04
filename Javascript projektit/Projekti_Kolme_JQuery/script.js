@@ -12,7 +12,7 @@ $(document).ready(function () {
   lataaOstokset();
 
   // Kuunnellaan lomakkeen lähettämistä (Lisää-nappi)
-  // Estetään oletustoiminto (event.preventDefault()) automaattisesti
+  // Estetään oletustoiminto eli sivuston uudelleenlataus (event.preventDefault()) automaattisesti
   $("#ostoslomake").on("submit", function (event) {
     event.preventDefault();
     lisaaListaan();
