@@ -1,7 +1,7 @@
 # Projektin nimi ja tekijät
 Projekti 3: JS-sovellus ulkoisia kirjastoja käyttäen. Uusi jouluinen versio projektista yksi TODO kauppalista käyttäen jQuerya ja TailwindCSS:ää. Tekijänä Kalle Heiskanen.
 ## Verkkolinkit:
-Pääset julkaistuun sovellukseen käsiksi osoitteessa https://super-creponne-19b0bd.netlify.app/ (Ilmainen käyttö täyttynyt. Tästä saatu ilmoitus, avautuu Joulukuun 22 2025 uudelleen)
+Pääset julkaistuun sovellukseen käsiksi osoitteessa https://super-creponne-19b0bd.netlify.app/ (Ilmainen käyttö täyttynyt. Tästä saatu ilmoitus, avautuu Joulukuun 22 2025 uudelleen ks. kuva kuvakaappaus osiosta)
 
 Linkki projektin videoesittelyyn https://video.laurea.fi/media/Projekti+3+videodemo/0_1xpixvqp?st=5 
 
