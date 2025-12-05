@@ -34,7 +34,7 @@ $(document).ready(function () {
     const $listarivi = $("<li>").addClass(
       "flex justify-between items-center py-2 border-b border-gray-200"
     );
-    const $tekstispan = $("<span>").text(teksti).addClass("flex-grow mr-4"); // ANTAA VÄLIN
+    const $tekstispan = $("<span>").text(teksti).addClass("flex-grow mr-4"); 
     const $checkbox = $("<input>").attr("type", "checkbox").addClass("h-4 w-4");
 
     // Jos tuote oli jo ostettu (ladattu localStoragesta), merkitään se
