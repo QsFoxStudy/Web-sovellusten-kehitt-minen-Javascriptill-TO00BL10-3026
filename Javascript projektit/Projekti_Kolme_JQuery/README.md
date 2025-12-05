@@ -3,7 +3,7 @@ Projekti 3: JS-sovellus ulkoisia kirjastoja käyttäen. Uusi jouluinen versio pr
 ## Verkkolinkit:
 Pääset julkaistuun sovellukseen käsiksi osoitteessa https://super-creponne-19b0bd.netlify.app/ (Ilmainen käyttö täyttynyt. Tästä saatu ilmoitus, avautuu Joulukuun 22 2025 uudelleen)
 
-Linkki projektin videoesittelyyn 
+Linkki projektin videoesittelyyn https://video.laurea.fi/media/Projekti+3+videodemo/0_1xpixvqp?st=5 
 
 ## Työn jakautuminen 
 Tein yksin.
@@ -42,6 +42,8 @@ Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta
 Kuva: https://photos.google.com/u/1/photo/AF1QipNr5RzUl_EJ2r-aPXSGcRsOuTaN3h7NNTNTYLSl
 
 ![Sovelluksen näkymä](images/Näyttökuva%202025-12-04%20033515.png)
+![Sovelluksen näkymä](images/Näyttökuva%202025-12-05%20043549.png)
+
 
 
 ## Teknologiat
